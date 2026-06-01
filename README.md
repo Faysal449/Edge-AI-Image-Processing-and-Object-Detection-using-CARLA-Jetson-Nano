@@ -1,4 +1,6 @@
-# Distributed Edge-AI Hardware-in-the-Loop (HIL) Simulation using CARLA & Jetson Nano
+# Edge-AI Image Processing and Object Detection using CARLA & Jetson Nano
+
+
 
 ## Overview
 
