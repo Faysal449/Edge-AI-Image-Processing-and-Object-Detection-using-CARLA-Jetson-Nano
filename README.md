@@ -216,6 +216,7 @@ The stress test used **640 × 480 resolution at 30 FPS**, which pushed the syste
 ## Author
 
 **Faysal Ahammed Tonmoy**
+
 **B.Eng. Electronic Engineering — Hochschule Hamm-Lippstadt**
 
 Embedded Systems | Edge AI | Autonomous Systems
