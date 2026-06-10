@@ -1,0 +1,149 @@
+<svg viewBox="0 0 1560 860" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="mPur" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 z" fill="#7C3AED"/></marker>
+    <marker id="mBlue" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 z" fill="#2563EB"/></marker>
+    <marker id="mTeal" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 z" fill="#0891B2"/></marker>
+    <marker id="mGrn" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 z" fill="#15803D"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1560" height="860" fill="#FFFFFF"/>
+
+  <!-- ============ LANE BACKGROUNDS ============ -->
+  <rect x="30"  y="44" width="340" height="742" rx="10" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1.5"/>
+  <rect x="400" y="44" width="340" height="742" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <rect x="770" y="44" width="760" height="742" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+
+  <!-- ============ LANE HEADERS ============ -->
+  <rect x="30"  y="44" width="340" height="54" rx="10" fill="#6D28D9"/>
+  <rect x="30"  y="80" width="340" height="18" fill="#6D28D9"/>
+  <text x="200" y="70" font-size="19" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CARLA Simulator</text>
+  <text x="200" y="90" font-size="11" fill="#E9D5FF" text-anchor="middle">the simulated world (plant)</text>
+
+  <rect x="400" y="44" width="340" height="54" rx="10" fill="#1D4ED8"/>
+  <rect x="400" y="80" width="340" height="18" fill="#1D4ED8"/>
+  <text x="570" y="70" font-size="19" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Windows PC</text>
+  <text x="570" y="90" font-size="11" fill="#DBEAFE" text-anchor="middle">frame capture &amp; encoding</text>
+
+  <rect x="770" y="44" width="760" height="54" rx="10" fill="#15803D"/>
+  <rect x="770" y="80" width="760" height="18" fill="#15803D"/>
+  <text x="1150" y="70" font-size="19" font-weight="bold" fill="#FFFFFF" text-anchor="middle">NVIDIA Jetson Nano</text>
+  <text x="1150" y="90" font-size="11" fill="#DCFCE7" text-anchor="middle">edge AI inference &amp; feedback</text>
+
+  <!-- ============ CARLA BOXES ============ -->
+  <rect x="50" y="118" width="300" height="60" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="200" y="143" font-size="14.5" font-weight="bold" fill="#5B21B6" text-anchor="middle">CARLA World / Town Map</text>
+  <text x="200" y="163" font-size="11" fill="#475569" text-anchor="middle">Town03 &#183; urban environment</text>
+  <line x1="200" y1="178" x2="200" y2="194" stroke="#7C3AED" stroke-width="2" marker-end="url(#mPur)"/>
+
+  <rect x="50" y="196" width="300" height="60" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="200" y="221" font-size="14.5" font-weight="bold" fill="#5B21B6" text-anchor="middle">Vehicle Actor</text>
+  <text x="200" y="241" font-size="11" fill="#475569" text-anchor="middle">Tesla Model 3 &#183; autopilot</text>
+  <line x1="200" y1="256" x2="200" y2="272" stroke="#7C3AED" stroke-width="2" marker-end="url(#mPur)"/>
+
+  <rect x="50" y="274" width="300" height="60" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="200" y="299" font-size="14.5" font-weight="bold" fill="#5B21B6" text-anchor="middle">RGB Camera Sensor</text>
+  <text x="200" y="319" font-size="11" fill="#475569" text-anchor="middle">320&#215;240 &#183; 10 FPS &#183; FOV 90&#176;</text>
+  <line x1="200" y1="334" x2="200" y2="350" stroke="#7C3AED" stroke-width="2" marker-end="url(#mPur)"/>
+
+  <rect x="50" y="352" width="300" height="60" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="200" y="377" font-size="14.5" font-weight="bold" fill="#5B21B6" text-anchor="middle">Frame Output</text>
+  <text x="200" y="397" font-size="11" fill="#475569" text-anchor="middle">raw BGRA &#8594; NumPy array</text>
+
+  <!-- Physics (secondary) -->
+  <rect x="50" y="452" width="300" height="56" rx="7" fill="#FAF5FF" stroke="#C4B5FD" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="200" y="476" font-size="13.5" font-weight="bold" fill="#6D28D9" text-anchor="middle">Physics Engine</text>
+  <text x="200" y="495" font-size="11" fill="#475569" text-anchor="middle">vehicle dynamics (background)</text>
+
+  <!-- CARLA footer tags -->
+  <rect x="50" y="690" width="300" height="34" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="200" y="711" font-size="10.5" fill="#475569" text-anchor="middle">CARLA 0.9.14 &#183; Unreal Engine 4</text>
+  <rect x="50" y="732" width="300" height="34" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="200" y="753" font-size="10.5" fill="#475569" text-anchor="middle">Town03 &#183; autopilot &#183; virtual sensors</text>
+
+  <!-- ============ PC BOXES ============ -->
+  <rect x="420" y="118" width="300" height="60" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="570" y="143" font-size="14.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">CARLA Python Client</text>
+  <text x="570" y="163" font-size="11" fill="#475569" text-anchor="middle">carla.Client() &#183; API connection</text>
+  <line x1="570" y1="178" x2="570" y2="194" stroke="#2563EB" stroke-width="2" marker-end="url(#mBlue)"/>
+
+  <rect x="420" y="196" width="300" height="60" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="570" y="221" font-size="14.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">Frame Preprocessor</text>
+  <text x="570" y="241" font-size="11" fill="#475569" text-anchor="middle">BGRA&#8594;BGR &#183; JPEG encode Q60</text>
+  <line x1="570" y1="256" x2="570" y2="272" stroke="#2563EB" stroke-width="2" marker-end="url(#mBlue)"/>
+
+  <rect x="420" y="274" width="300" height="60" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="570" y="299" font-size="14.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">Socket Sender</text>
+  <text x="570" y="319" font-size="11" fill="#475569" text-anchor="middle">TCP / UDP &#183; port 5001</text>
+  <line x1="570" y1="334" x2="570" y2="350" stroke="#2563EB" stroke-width="2" marker-end="url(#mBlue)"/>
+
+  <rect x="420" y="352" width="300" height="60" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="570" y="377" font-size="14.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">Packet Structure</text>
+  <text x="570" y="397" font-size="11" fill="#475569" text-anchor="middle">Frame ID &#183; Timestamp &#183; Size &#183; JPEG</text>
+
+  <!-- Feedback Receiver (secondary) -->
+  <rect x="420" y="452" width="300" height="56" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="570" y="476" font-size="13.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">Feedback Receiver</text>
+  <text x="570" y="495" font-size="11" fill="#475569" text-anchor="middle">TCP :5002 &#183; detection results</text>
+
+  <!-- PC footer tags -->
+  <rect x="420" y="690" width="300" height="34" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="570" y="711" font-size="10.5" fill="#475569" text-anchor="middle">Windows PC &#183; Ethernet / WiFi</text>
+  <rect x="420" y="732" width="300" height="34" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="570" y="753" font-size="10.5" fill="#475569" text-anchor="middle">Python &#183; CARLA API &#183; OpenCV &#183; sockets</text>
+
+  <!-- ============ JETSON BOXES (single vertical flow) ============ -->
+  <rect x="930" y="118" width="440" height="60" rx="7" fill="#CFFAFE" stroke="#0891B2" stroke-width="2"/>
+  <text x="1150" y="143" font-size="14.5" font-weight="bold" fill="#155E75" text-anchor="middle">Socket Receiver</text>
+  <text x="1150" y="163" font-size="11" fill="#475569" text-anchor="middle">TCP / UDP &#183; port 5001</text>
+  <line x1="1150" y1="178" x2="1150" y2="194" stroke="#0891B2" stroke-width="2" marker-end="url(#mTeal)"/>
+
+  <rect x="930" y="196" width="440" height="60" rx="7" fill="#CFFAFE" stroke="#0891B2" stroke-width="2"/>
+  <text x="1150" y="221" font-size="14.5" font-weight="bold" fill="#155E75" text-anchor="middle">JPEG Decoder</text>
+  <text x="1150" y="241" font-size="11" fill="#475569" text-anchor="middle">cv2.imdecode() &#8594; BGR frame</text>
+  <line x1="1150" y1="256" x2="1150" y2="272" stroke="#0891B2" stroke-width="2" marker-end="url(#mTeal)"/>
+
+  <rect x="930" y="274" width="440" height="60" rx="7" fill="#CFFAFE" stroke="#0891B2" stroke-width="2"/>
+  <text x="1150" y="299" font-size="14.5" font-weight="bold" fill="#155E75" text-anchor="middle">CUDA GPU Memory</text>
+  <text x="1150" y="319" font-size="11" fill="#475569" text-anchor="middle">BGR&#8594;RGBA &#183; cudaFromNumpy</text>
+  <line x1="1150" y1="334" x2="1150" y2="350" stroke="#0891B2" stroke-width="2" marker-end="url(#mTeal)"/>
+
+  <!-- TensorRT engine + models (dark) -->
+  <rect x="930" y="352" width="440" height="112" rx="7" fill="#1E293B"/>
+  <text x="1150" y="376" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TensorRT Engine &#8212; FP16 (GPU)</text>
+  <rect x="945" y="388" width="200" height="62" rx="5" fill="#F8FAFC"/>
+  <text x="1045" y="411" font-size="12.5" font-weight="bold" fill="#1E40AF" text-anchor="middle">SSD-MobileNet-V2</text>
+  <text x="1045" y="431" font-size="10.5" fill="#475569" text-anchor="middle">300&#215;300 &#183; lower latency</text>
+  <rect x="1155" y="388" width="200" height="62" rx="5" fill="#F8FAFC"/>
+  <text x="1255" y="411" font-size="12.5" font-weight="bold" fill="#3730A3" text-anchor="middle">YOLOv8</text>
+  <text x="1255" y="431" font-size="10.5" fill="#475569" text-anchor="middle">640&#215;640 &#183; higher accuracy</text>
+  <line x1="1150" y1="464" x2="1150" y2="492" stroke="#15803D" stroke-width="2" marker-end="url(#mGrn)"/>
+
+  <rect x="930" y="494" width="440" height="60" rx="7" fill="#DCFCE7" stroke="#15803D" stroke-width="2"/>
+  <text x="1150" y="519" font-size="14.5" font-weight="bold" fill="#166534" text-anchor="middle">Detection Results</text>
+  <text x="1150" y="539" font-size="11" fill="#475569" text-anchor="middle">class &#183; confidence &#183; bounding box</text>
+  <line x1="1150" y1="554" x2="1150" y2="572" stroke="#15803D" stroke-width="2" marker-end="url(#mGrn)"/>
+
+  <rect x="930" y="574" width="440" height="60" rx="7" fill="#DCFCE7" stroke="#15803D" stroke-width="2"/>
+  <text x="1150" y="599" font-size="14.5" font-weight="bold" fill="#166534" text-anchor="middle">Feedback Sender</text>
+  <text x="1150" y="619" font-size="11" fill="#475569" text-anchor="middle">build JSON &#183; TCP :5002 &#8594; PC</text>
+
+  <!-- Jetson footer tags -->
+  <rect x="800" y="690" width="700" height="34" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="1150" y="711" font-size="10.5" fill="#475569" text-anchor="middle">ARM Cortex-A57 &#183; 128-core Maxwell GPU &#183; 4 GB LPDDR4</text>
+  <rect x="800" y="732" width="700" height="34" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="1150" y="753" font-size="10.5" fill="#475569" text-anchor="middle">jetson-inference &#183; TensorRT &#183; OpenCV &#183; CUDA</text>
+
+  <!-- ============ CROSS-LANE ARROWS ============ -->
+  <!-- A: CARLA -> PC (frame callback) -->
+  <path d="M350,382 H385 V226 H418" fill="none" stroke="#7C3AED" stroke-width="2" marker-end="url(#mPur)"/>
+  <text x="376" y="304" font-size="11" fill="#6D28D9" text-anchor="middle" transform="rotate(-90 376 304)">frame callback</text>
+
+  <!-- B: PC -> Jetson (frame over network) -->
+  <path d="M720,304 C795,304 855,150 928,150" fill="none" stroke="#2563EB" stroke-width="3" marker-end="url(#mBlue)"/>
+  <text x="825" y="172" font-size="12" font-weight="bold" fill="#1D4ED8" text-anchor="middle">JPEG frame &#183; TCP/UDP :5001</text>
+  <text x="825" y="190" font-size="10.5" fill="#64748B" text-anchor="middle">WiFi / Ethernet</text>
+
+  <!-- C: Jetson -> PC (feedback over network) -->
+  <path d="M928,600 C855,600 795,482 722,482" fill="none" stroke="#15803D" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#mGrn)"/>
+  <text x="822" y="556" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">detection JSON &#183; TCP :5002</text>
+</svg>
